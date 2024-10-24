@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,12 +24,12 @@ export default function RootLayout({ children }) {
       <body>
         <nav className="bg-red-500">
           <ul className="flex justify-center items-center gap-5">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>News</li>
-            <li>Blog</li>
-            <li>Login</li>
+            <Link href="/" ><li>Home</li></Link>
+           <Link href="/about" > <li>About</li></Link>
+            <Link href="/contact" ><li>Contact</li></Link>
+            <Link href="/news" ><li>News</li></Link>
+            <Link href="/blog" ><li>Blog</li></Link>
+            <Link href="/login" ><li>Login</li></Link>
           </ul>
         </nav>
         <div className="h-screen">
