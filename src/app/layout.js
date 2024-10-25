@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "../components/Navbar/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,16 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <nav className="bg-red-500">
-          <ul className="flex justify-center items-center gap-5">
-            <Link href="/" ><li>Home</li></Link>
-           <Link href="/about" > <li>About</li></Link>
-            <Link href="/contact" ><li>Contact</li></Link>
-            <Link href="/news" ><li>News</li></Link>
-            <Link href="/blog" ><li>Blog</li></Link>
-            <Link href="/login" ><li>Login</li></Link>
-          </ul>
-        </nav>
+        <Navbar/>
         <div className="h-screen">
         {children}
         </div>
