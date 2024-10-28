@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar/>
-        <div className="h-screen">
+        <div >
         {children}
         </div>
-        <footer className="flex justify-center">
-          This Is Footer Part
+        <footer className="flex justify-center bg-blue-500">
+          <h1>This Is Footer Part</h1>
         </footer>
       </body>
     </html>
