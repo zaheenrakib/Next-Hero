@@ -3,10 +3,10 @@ import React from 'react'
 
 const BlogPage = () => {
   return (
-    <div className='flex flex-wrap gap-10 container mx-auto'>
+    <div className='flex flex-wrap gap-10 container mx-auto h-screen'>
       {
         blogs.map((blog) => (
-          <div key={blog.slug} className="card bg-primary text-primary-content w-96">
+          <div key={blog.slug} className="card bg-primary text-primary-content w-96 h-96 mt-12">
             <div className="card-body">
               <h2 className="card-title">{blog.title}</h2>
               <p>{blog.description}</p>
