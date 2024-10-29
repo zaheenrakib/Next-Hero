@@ -1,4 +1,4 @@
-import AboutContect from '@/components/Navbar/AboutContect/AboutContect';
+import AboutContect from '@/components/AboutContect/AboutContect';
 import React from 'react'
 
 const AboutPage = () => {
