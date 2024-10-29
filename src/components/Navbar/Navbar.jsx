@@ -27,6 +27,10 @@ const Navbar = () => {
       path: "/blog",
       title: "Blog"
     },
+    {
+      path: "/categories",
+      title: "Category"
+    },
   ]
   const hadler = () => {
     router.push('/login')
