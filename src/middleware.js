@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const user = false;
+const user = true;
 
 export const middleware = (request) => {
 
