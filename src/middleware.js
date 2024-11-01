@@ -11,9 +11,9 @@ export const middleware = (request) => {
     return NextResponse.redirect(new URL('/login' , request.url))
   }
 
-  // if(!user) {
-  //   return NextResponse.redirect(new URL('/login' , request.url))
-  // }
+  if(!user) {
+    return NextResponse.redirect(new URL('/login' , request.url))
+  }
   return NextResponse.next();
 
 }
