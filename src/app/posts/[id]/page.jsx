@@ -1,8 +1,23 @@
 import React from 'react'
 
-export const page = ({params}) => {
+const getDetailsPost = async (id) =>{
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+  const data = await res.json();
+  return data;
+}
 
+const postDetailspage = async ({params}) => {
+  const {title , body} = await getDetailsPost(params.id)
   return (
-    <div>page</div>
+    <>
+    <div>
+      <div>
+        <h1>Title : {title} </h1>
+        <h1>Description: {body} </h1>
+      </div>
+    </div>
+    </>
   )
 }
+
+export default postDetailspage

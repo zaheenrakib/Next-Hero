@@ -1,4 +1,5 @@
 import { getPosts } from '@/services/postApi';
+import Link from 'next/link';
 import React from 'react'
 
 
@@ -16,6 +17,7 @@ const PostPage = async () => {
                     <div key={id} className='boder-2 p-6 border-red-500'>
                         <h1> Title: {title}</h1>
                         <h1> Description: {body}</h1>
+                        <button className='btn btn-error text-white'><Link href={`/posts/${id}`}>See More</Link></button>
                     </div>
                 ))
             }
