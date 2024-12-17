@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+  title: "Blog",
+  description: "Blog page",
+};
+
 const BlogPage = () => {
   return (
     <div className='flex flex-wrap gap-10 container mx-auto h-screen'>

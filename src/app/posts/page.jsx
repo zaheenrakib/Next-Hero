@@ -3,6 +3,12 @@ import Link from 'next/link';
 import React from 'react'
 
 
+export const metadata = {
+    title: "Posts",
+    description: "Posts page",
+  };
+
+
 const PostPage = async () => {
     const postsData = await getPosts();
     console.log(postsData)

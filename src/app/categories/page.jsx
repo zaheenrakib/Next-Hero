@@ -1,5 +1,11 @@
 import React from 'react'
 
+
+export const metadata = {
+  title: "Category",
+  description: "Category page",
+};
+
 const CategoriesPage = () => {
   return (
     <div className='h-screen'>

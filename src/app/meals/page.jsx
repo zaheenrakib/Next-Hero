@@ -1,6 +1,12 @@
 import Meals from "@/components/Meals/Meals";
 import React from "react";
 
+
+export const metadata = {
+  title: "Meals",
+  description: "Meals page",
+};
+
 const MealsPage = () => {
   return (
     <>

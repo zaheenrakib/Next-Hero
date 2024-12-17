@@ -1,5 +1,12 @@
 import React from 'react';
 
+
+
+export const metadata = {
+  title: "Cantact",
+  description: "Cantact page",
+};
+
 const ContactPage = () => {
   return (
     <div className="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">

@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from './styles.module.css'
 
+
+export const metadata = {
+  title: "News",
+  description: "News page",
+};
+
 const NewsPage = () => {
   return (
     <div>
