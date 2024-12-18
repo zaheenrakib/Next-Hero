@@ -40,9 +40,14 @@ const Navbar = () => {
       title: "Meals"
     },
     {
+      path: "/gallery",
+      title: "Gallery"
+    },
+    {
       path: "/dashboard",
       title: "Dashboard"
     },
+    
   ]
   const hadler = () => {
     router.push('/login')
