@@ -6,10 +6,20 @@ export const metadata = {
   description: "About page",
 };
 
-const AboutPage = () => {
+const getTime = async () =>{
+  const res = await fetch('http://localhost:3000/time',{next : {revalidate:5}});
+  const data = await res.json();
+  return data?.currentTime;
+}
+
+const AboutPage = async () => {
+
+  const currentTime = await getTime();
+
   return (
     <div>
-       This IS About  page
+       <h1 className='text-7xl'>This IS About  page</h1>
+       <h1>Time : {currentTime} </h1>
        <AboutContect />
     </div>
   )

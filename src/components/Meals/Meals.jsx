@@ -32,7 +32,7 @@ const Meals = () => {
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   return (
     <div>
